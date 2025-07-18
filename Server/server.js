@@ -33,7 +33,6 @@ const io = new Server(server, {
 });
 
 io.on("connection", (socket) => {
-  console.log("A user connected:", socket.id);
 
   const chat_sessions = {};
   chat_sessions[socket.id] = socket;
